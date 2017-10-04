@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Choice Picker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+  <h1 class="center"> Multiple Choice Picker</h1>
+
+  <div class="row form-group">
+    <div class="col-xs-6">
+    <h3>List Input</h3>
+    <div class="row">
+      <div class="col-xs-5">
+        Number of choices
+      </div>
+      <div class="col-xs-3">
+      <select name="choiceNumber" id="choiceNumber" class="form-control">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+        <br>
+    </div>
+
+    </div>
+      <textarea name="listInput" id="listInput" cols="30" rows="10" class="form-control"></textarea>
+      <div id="answerSection">
+        Answers
+      </div>
+    </div>
+      <div class="col-xs-6">
+      <h3>Choices</h3>
+      <br/>
+      <br/>
+        <div id="listOutput"></div>        
+      </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-6">
+      <button class="btn btn-primary" id="saveList">Save</button>
+      <button class="btn btn-success" id="editList">Edit</button>
+      <br/>
+      <br/>
+    </div>    
+  </div>
+    
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
