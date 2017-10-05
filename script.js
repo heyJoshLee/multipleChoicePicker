@@ -57,7 +57,9 @@ function fillInChoices() {
   // fill array
   var i = 0;
   while(outputArray.length < amountToChoose) {
-    if (shuffledChoices[i] !== selectedAnswer) { 
+    // trim fixes trailing space error
+    // TODO: Is the a more elegant way to do this?
+    if (!outputArray.includes(shuffledChoices[i]) && !outputArray.includes(shuffledChoices[i].trim())) { 
       outputArray.push(shuffledChoices[i])
     }
     i++;
